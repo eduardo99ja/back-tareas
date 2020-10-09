@@ -18,9 +18,10 @@ const PORT = process.env.PORT || 4000;
 //importar rutas
 
 app.use("/api/usuarios", require("./routes/usuarios"));
+app.use("/api/auth", require("./routes/auth"));
 
 //arrancar la app
 
 app.listen(PORT, () => {
-  console.log(`El puerto esta funcionando en el puerto ${PORT}`);
+  console.log(`Habilitado el puerto: ${PORT}`);
 });
