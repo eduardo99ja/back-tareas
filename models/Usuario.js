@@ -19,7 +19,7 @@ const UsuarioSchema = mongoose.Schema({
   },
   registro: {
     type: Date,
-    dafault: Date.now(),
+    default: Date.now(),
   },
 });
 
